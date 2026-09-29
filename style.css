@@ -1,0 +1,281 @@
+/* ============================================
+   基础设置
+   ============================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #2c2c2c;
+  background: #fbfaf7;
+  margin: 0;
+  padding: 0;
+}
+
+/* 内容容器：电脑上限宽居中，手机自动铺满 */
+main,
+header,
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  padding-top: 48px;
+  padding-bottom: 8px;
+}
+
+footer {
+  margin-top: 80px;
+  padding-bottom: 48px;
+  font-size: 0.85em;
+  color: #999;
+  text-align: center;
+}
+
+/* ============================================
+   文字与链接
+   ============================================ */
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 1.9em;
+  margin: 0 0 0.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 2em 0 1em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ece8e0;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 1.5em 0 0.5em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #8b5e3c;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #5c3a22;
+  text-decoration: underline;
+}
+
+/* ============================================
+   主页：小说列表
+   ============================================ */
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+.book-list li {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ece8e0;
+}
+
+.book-list li:last-child {
+  border-bottom: none;
+}
+
+.book-list h3 {
+  margin: 0 0 0.4em;
+  font-size: 1.25em;
+}
+
+.book-list p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* ============================================
+   小说目录页
+   ============================================ */
+.book-title {
+  font-size: 2em;
+  margin: 0.2em 0 0.6em;
+  letter-spacing: 0.02em;
+}
+
+.book-summary {
+  background: #f4f1ea;
+  padding: 18px 22px;
+  border-left: 3px solid #b08d6a;
+  margin: 0 0 40px;
+  color: #555;
+  font-size: 0.95em;
+  border-radius: 2px;
+}
+
+.book-summary p {
+  margin: 0.5em 0;
+}
+
+.book-summary p:first-child {
+  margin-top: 0;
+}
+
+.book-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-list {
+  padding-left: 1.4em;
+  margin: 1em 0;
+}
+
+.chapter-list li {
+  margin: 12px 0;
+}
+
+/* ============================================
+   章节正文页
+   ============================================ */
+.chapter h1 {
+  font-size: 1.6em;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.chapter p {
+  text-indent: 2em;
+  margin: 1.1em 0;
+}
+
+/* 正文首段不缩进（更雅致） */
+.chapter p:first-of-type {
+  text-indent: 0;
+}
+
+/* 章节底部导航 */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid #ece8e0;
+  font-size: 0.95em;
+}
+
+.chapter-nav a {
+  flex: 1;
+}
+
+.chapter-nav a:last-child {
+  text-align: right;
+}
+
+/* ============================================
+   联系表单
+   ============================================ */
+.contact form {
+  margin-top: 1em;
+}
+
+.contact textarea,
+.contact input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95em;
+  color: #2c2c2c;
+  background: #fff;
+  border: 1px solid #ddd6ca;
+  border-radius: 3px;
+  margin-top: 8px;
+  resize: vertical;
+}
+
+.contact textarea:focus,
+.contact input[type="email"]:focus {
+  outline: none;
+  border-color: #b08d6a;
+}
+
+.contact button {
+  margin-top: 12px;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-size: 0.95em;
+  color: #fff;
+  background: #8b5e3c;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact button:hover {
+  background: #5c3a22;
+}
+
+/* ============================================
+   手机端微调
+   ============================================ */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  main,
+  header,
+  footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  header {
+    padding-top: 32px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .book-title {
+    font-size: 1.7em;
+  }
+
+  .chapter h1 {
+    font-size: 1.4em;
+  }
+
+  footer {
+    margin-top: 56px;
+  }
+
+  .chapter-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .chapter-nav a:last-child {
+    text-align: left;
+  }
+}
