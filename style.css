@@ -1,396 +1,291 @@
-/* ===== 基础重置 ===== */
+/* ========== 基础重置 ========== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 17px;
-  -webkit-text-size-adjust: 100%;
-}
-
+/* ========== 全局：纸质书底色 + 衬线字体 ========== */
 body {
-  margin: 0;
-  padding: 0 20px;
   font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  font-size: 17px;
   line-height: 1.9;
-  color: #2f2f2f;
-  background-color: #faf8f4;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  color: #2c2c2c;
+  background: #f7f4ee;
+  padding: 40px 20px;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ===== 链接 ===== */
+/* 内容容器：电脑端限宽，手机端自适应 */
+main, header, footer {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ========== 链接：低调的棕褐色，悬停才下划线 ========== */
 a {
-  color: #7a4a2b;
+  color: #7a5c3e;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: color 0.2s;
 }
-
 a:hover {
-  color: #5a3218;
-  border-bottom-color: #c9b8a3;
+  color: #4a3520;
+  text-decoration: underline;
 }
 
-/* ===== 标题 ===== */
+/* ========== 标题：克制、加粗、字距稍宽 ========== */
 h1, h2, h3 {
   font-weight: 700;
-  line-height: 1.4;
-  color: #1f1f1f;
   letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 1.75em;
-  margin: 0 0 0.4em;
+  font-size: 1.7em;
+  margin-bottom: 0.6em;
 }
 
 h2 {
-  font-size: 1.3em;
-  margin: 2.2em 0 0.8em;
+  font-size: 1.25em;
+  margin: 1.8em 0 0.8em;
   padding-bottom: 0.4em;
-  border-bottom: 1px solid #e5ddd0;
+  border-bottom: 1px solid #e0d8cc;
 }
 
 h3 {
-  font-size: 1.1em;
-  margin: 1.6em 0 0.4em;
+  font-size: 1.08em;
+  margin: 1.4em 0 0.5em;
 }
 
-/* ===== 页眉 ===== */
+/* ========== 页头 ========== */
 header {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
-
-header h1 {
-  margin-bottom: 0.2em;
-}
-
 header p {
-  margin: 0;
-  color: #8a7d6b;
-  font-size: 0.95em;
+  font-size: 0.9em;
+  color: #8a7a68;
+}
+header h1 {
+  margin-top: 0.5em;
 }
 
-/* ===== 主页小说列表 ===== */
+/* ========== 页脚 ========== */
+footer {
+  margin-top: 4em;
+  padding-top: 1.5em;
+  border-top: 1px solid #e0d8cc;
+  font-size: 0.85em;
+  color: #9a8a78;
+  text-align: center;
+}
+
+/* ========== 主页：小说列表 ========== */
 .book-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
-
 .book-list li {
-  padding: 1.4em 0;
-  border-bottom: 1px solid #ece5d8;
+  margin-bottom: 1.8em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ece5da;
 }
-
 .book-list li:last-child {
   border-bottom: none;
 }
-
 .book-list h3 {
+  font-size: 1.15em;
   margin: 0 0 0.3em;
-  font-size: 1.2em;
 }
-
-.book-list h3 a {
-  color: #1f1f1f;
-  border-bottom: none;
-}
-
-.book-list h3 a:hover {
-  color: #7a4a2b;
-}
-
 .book-list p {
-  margin: 0;
-  color: #6b6257;
   font-size: 0.95em;
+  color: #6b5d4d;
 }
 
-/* ===== 小说目录页 ===== */
+/* ========== 小说目录页：书名 + 文案 + 章节列表 ========== */
 .book-title {
-  font-size: 1.9em;
-  margin: 0.2em 0 0.5em;
+  font-size: 2em;
   text-align: center;
-  letter-spacing: 0.05em;
+  margin: 1em 0 0.8em;
+  letter-spacing: 0.08em;
 }
 
+/* 文案区：有设计感，像书的腰封 */
 .book-summary {
-  background: #f4efe6;
-  padding: 1.2em 1.4em;
-  border-left: 3px solid #b99b76;
+  background: #f0ebe1;
+  border-left: 3px solid #b09a7a;
+  padding: 20px 24px;
   margin: 0 0 2.5em;
-  color: #5a5248;
   font-size: 0.95em;
   line-height: 1.85;
+  color: #5a4d3d;
+  border-radius: 2px;
 }
-
 .book-summary p {
-  margin: 0.5em 0;
+  margin: 0.6em 0;
 }
-
 .book-summary p:first-child {
   margin-top: 0;
 }
-
 .book-summary p:last-child {
   margin-bottom: 0;
 }
 
+/* 章节列表 */
 .chapter-section h2 {
-  margin-top: 0;
+  text-align: center;
+  border-bottom: none;
+  margin-bottom: 1.2em;
 }
-
 .chapter-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: chapter;
+  padding-left: 0;
 }
-
 .chapter-list li {
-  counter-increment: chapter;
-  padding: 0.7em 0;
-  border-bottom: 1px dashed #e8e0d2;
+  margin: 0.7em 0;
+  font-size: 1em;
 }
-
-.chapter-list li:last-child {
-  border-bottom: none;
-}
-
 .chapter-list li a {
-  display: flex;
-  align-items: baseline;
-  gap: 0.6em;
-  border-bottom: none;
-  color: #2f2f2f;
+  display: block;
+  padding: 0.35em 0;
+  border-bottom: 1px dotted #e5ddd0;
 }
-
-.chapter-list li a::before {
-  content: counter(chapter, decimal-leading-zero);
-  font-size: 0.8em;
-  color: #b0a390;
-  font-family: Georgia, serif;
-  flex-shrink: 0;
-}
-
 .chapter-list li a:hover {
-  color: #7a4a2b;
+  text-decoration: none;
+  color: #4a3520;
+  border-bottom-color: #b09a7a;
 }
 
-/* ===== 章节正文 ===== */
+/* ========== 小说正文页 ========== */
 .chapter h1 {
-  font-size: 1.5em;
   text-align: center;
-  margin: 0.5em 0 2em;
-  letter-spacing: 0.05em;
+  font-size: 1.5em;
+  margin: 1em 0 2em;
+  letter-spacing: 0.08em;
 }
 
 .chapter p {
-  margin: 0 0 1.5em;
-  text-indent: 0;
+  margin: 0 0 1.6em;      /* 段间距大 */
+  text-indent: 0;          /* 不首行缩进 */
   line-height: 2;
 }
 
+/* 章节底部导航 */
 .chapter-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 3em;
-  padding-top: 1.5em;
-  border-top: 1px solid #e5ddd0;
-  font-size: 0.9em;
+  margin-top: 3.5em;
+  padding-top: 1.2em;
+  border-top: 1px solid #e0d8cc;
+  font-size: 0.92em;
 }
 
-.chapter-nav a {
-  border-bottom: none;
-  color: #7a4a2b;
-}
-
-.chapter-nav a:hover {
-  color: #5a3218;
-}
-
-/* ===== 联系表单 ===== */
-.contact {
-  margin-top: 3em;
-  padding-top: 1.5em;
-  border-top: 1px solid #e5ddd0;
-}
-
-.contact h2 {
-  border-bottom: none;
-  margin-top: 0;
-}
-
-.contact textarea,
-.contact input[type="email"] {
-  font-family: inherit;
-  font-size: 0.95em;
-  padding: 0.7em;
-  border: 1px solid #d8cfc0;
-  border-radius: 3px;
-  background: #fffdf9;
-  color: #2f2f2f;
-  width: 100%;
-  margin-top: 0.6em;
-}
-
-.contact textarea:focus,
-.contact input[type="email"]:focus {
-  outline: none;
-  border-color: #b99b76;
-}
-
-.contact button {
-  font-family: inherit;
-  font-size: 0.95em;
-  margin-top: 0.8em;
-  padding: 0.6em 1.6em;
-  background: #7a4a2b;
-  color: #faf8f4;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.contact button:hover {
-  background: #5a3218;
-}
-
-/* ===== 页脚 ===== */
-footer {
-  margin-top: 4em;
-  padding-top: 1.5em;
-  border-top: 1px solid #ece5d8;
-  font-size: 0.82em;
-  color: #a89c8a;
+/* ========== 诗歌排版 ========== */
+/* 用法：<div class="poem">诗句<br>诗句<br>诗句</div> */
+.poem {
+  margin: 2em auto;
+  padding: 1.2em 1.5em;
+  max-width: 26em;
   text-align: center;
+  font-style: normal;
+  line-height: 2.1;
+  color: #3a3228;
   letter-spacing: 0.05em;
+  background: #f2ede4;
+  border-top: 1px solid #ddd3c4;
+  border-bottom: 1px solid #ddd3c4;
+}
+.poem .poem-title {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-bottom: 0.8em;
+  color: #6b5d4d;
+  letter-spacing: 0.1em;
+}
+.poem .poem-author {
+  display: block;
+  font-size: 0.85em;
+  color: #9a8a78;
+  margin-top: 0.8em;
 }
 
-/* ===== 手机端适配 ===== */
+/* ========== 引用排版 ========== */
+/* 用法：<blockquote class="quote">引文</blockquote> */
+.quote {
+  margin: 2em 0;
+  padding: 0.8em 0 0.8em 1.3em;
+  border-left: 3px solid #b09a7a;
+  font-size: 0.95em;
+  line-height: 1.9;
+  color: #5a4d3d;
+  background: transparent;
+}
+.quote p {
+  margin: 0 0 0.6em;
+}
+.quote p:last-child {
+  margin-bottom: 0;
+}
+.quote cite {
+  display: block;
+  margin-top: 0.6em;
+  font-style: normal;
+  font-size: 0.85em;
+  color: #9a8a78;
+  text-align: right;
+}
+.quote cite::before {
+  content: "—— ";
+}
+
+/* ========== 文末作话 ========== */
+/* 用法：<aside class="author-note">作话内容</aside> */
+.author-note {
+  margin-top: 3em;
+  padding: 1.2em 1.4em;
+  background: #f0ebe1;
+  border-radius: 3px;
+  font-size: 0.88em;
+  line-height: 1.85;
+  color: #6b5d4d;
+}
+.author-note::before {
+  content: "作者的话";
+  display: block;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #8a7a68;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6em;
+}
+.author-note p {
+  margin: 0 0 0.6em;
+}
+.author-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========== 手机端适配 ========== */
 @media (max-width: 600px) {
-  html {
-    font-size: 16px;
-  }
-
   body {
-    padding: 24px 16px 48px;
+    font-size: 16px;
+    padding: 24px 16px;
+    line-height: 1.85;
   }
-
   h1 {
     font-size: 1.5em;
   }
-
   .book-title {
     font-size: 1.6em;
   }
-
   .chapter h1 {
     font-size: 1.3em;
+    margin: 0.8em 0 1.5em;
   }
-
   .book-summary {
-    padding: 1em 1.1em;
-    font-size: 0.92em;
+    padding: 16px 18px;
   }
-
-  .chapter p {
-    line-height: 1.9;
-    margin-bottom: 1.3em;
-  }
-
-  .chapter-nav {
-    font-size: 0.85em;
-  }
-}
-
-/* ===== 深色模式（跟随系统） ===== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1c1a17;
-    color: #d8d2c8;
-  }
-
-  h1, h2, h3 {
-    color: #f0ebe2;
-  }
-
-  a {
-    color: #c9a37a;
-  }
-
-  a:hover {
-    color: #e0be94;
-    border-bottom-color: #5a4a38;
-  }
-
-  h2 {
-    border-bottom-color: #3a352e;
-  }
-
-  .book-list li {
-    border-bottom-color: #2e2a25;
-  }
-
-  .book-list h3 a {
-    color: #f0ebe2;
-  }
-
-  .book-list p {
-    color: #a89c8a;
-  }
-
-  .book-summary {
-    background: #26221d;
-    border-left-color: #8a6f4e;
-    color: #b8b0a2;
-  }
-
-  .chapter-list li {
-    border-bottom-color: #2e2a25;
-  }
-
-  .chapter-list li a {
-    color: #d8d2c8;
-  }
-
-  .chapter-list li a::before {
-    color: #6b6257;
-  }
-
-  .chapter-nav {
-    border-top-color: #3a352e;
-  }
-
-  .contact {
-    border-top-color: #3a352e;
-  }
-
-  .contact textarea,
-  .contact input[type="email"] {
-    background: #26221d;
-    border-color: #3a352e;
-    color: #d8d2c8;
-  }
-
-  .contact button {
-    background: #8a6f4e;
-    color: #1c1a17;
-  }
-
-  .contact button:hover {
-    background: #a8895f;
-  }
-
-  footer {
-    border-top-color: #2e2a25;
-    color: #6b6257;
+  .poem {
+    padding: 1em 1.2em;
+    letter-spacing: 0.03em;
   }
 }
