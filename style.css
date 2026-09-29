@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-/* ========== 全局：纸质书底色 + 衬线字体 ========== */
+/* ========== 全局：柔和米白底 + 深灰正文 + 衬线字体 ========== */
 body {
   font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
   font-size: 17px;
   line-height: 1.9;
-  color: #2c2c2c;
-  background: #f7f4ee;
+  color: #3a3a3a;
+  background: #faf7f0;
   padding: 40px 20px;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,18 +22,18 @@ main, header, footer {
   margin: 0 auto;
 }
 
-/* ========== 链接：低调的棕褐色，悬停才下划线 ========== */
+/* ========== 链接：辅助色，悬停加深 ========== */
 a {
-  color: #7a5c3e;
+  color: #7B1E3A;
   text-decoration: none;
   transition: color 0.2s;
 }
 a:hover {
-  color: #4a3520;
+  color: #5a1429;
   text-decoration: underline;
 }
 
-/* ========== 标题：克制、加粗、字距稍宽 ========== */
+/* ========== 标题：大标题用辅助色 ========== */
 h1, h2, h3 {
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -42,14 +42,14 @@ h1, h2, h3 {
 
 h1 {
   font-size: 1.7em;
+  color: #7B1E3A;
   margin-bottom: 0.6em;
 }
 
 h2 {
   font-size: 1.25em;
+  color: #7B1E3A;
   margin: 1.8em 0 0.8em;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid #e0d8cc;
 }
 
 h3 {
@@ -63,7 +63,7 @@ header {
 }
 header p {
   font-size: 0.9em;
-  color: #8a7a68;
+  color: #8a8a8a;
 }
 header h1 {
   margin-top: 0.5em;
@@ -73,9 +73,8 @@ header h1 {
 footer {
   margin-top: 4em;
   padding-top: 1.5em;
-  border-top: 1px solid #e0d8cc;
   font-size: 0.85em;
-  color: #9a8a78;
+  color: #9a9a9a;
   text-align: center;
 }
 
@@ -86,10 +85,9 @@ footer {
 .book-list li {
   margin-bottom: 1.8em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid #ece5da;
 }
 .book-list li:last-child {
-  border-bottom: none;
+  padding-bottom: 0;
 }
 .book-list h3 {
   font-size: 1.15em;
@@ -97,7 +95,7 @@ footer {
 }
 .book-list p {
   font-size: 0.95em;
-  color: #6b5d4d;
+  color: #6a6a6a;
 }
 
 /* ========== 小说目录页：书名 + 文案 + 章节列表 ========== */
@@ -106,17 +104,17 @@ footer {
   text-align: center;
   margin: 1em 0 0.8em;
   letter-spacing: 0.08em;
+  color: #7B1E3A;
 }
 
-/* 文案区：有设计感，像书的腰封 */
+/* 文案区：只靠底色区分 */
 .book-summary {
-  background: #f0ebe1;
-  border-left: 3px solid #b09a7a;
+  background: #f2ece0;
   padding: 20px 24px;
   margin: 0 0 2.5em;
   font-size: 0.95em;
   line-height: 1.85;
-  color: #5a4d3d;
+  color: #5a5a5a;
   border-radius: 2px;
 }
 .book-summary p {
@@ -132,7 +130,6 @@ footer {
 /* 章节列表 */
 .chapter-section h2 {
   text-align: center;
-  border-bottom: none;
   margin-bottom: 1.2em;
 }
 .chapter-list {
@@ -146,12 +143,10 @@ footer {
 .chapter-list li a {
   display: block;
   padding: 0.35em 0;
-  border-bottom: 1px dotted #e5ddd0;
 }
 .chapter-list li a:hover {
   text-decoration: none;
-  color: #4a3520;
-  border-bottom-color: #b09a7a;
+  color: #5a1429;
 }
 
 /* ========== 小说正文页 ========== */
@@ -160,12 +155,14 @@ footer {
   font-size: 1.5em;
   margin: 1em 0 2em;
   letter-spacing: 0.08em;
+  color: #7B1E3A;
 }
 
 .chapter p {
   margin: 0 0 1.6em;      /* 段间距大 */
   text-indent: 0;          /* 不首行缩进 */
   line-height: 2;
+  color: #3a3a3a;
 }
 
 /* 章节底部导航 */
@@ -174,50 +171,47 @@ footer {
   justify-content: space-between;
   margin-top: 3.5em;
   padding-top: 1.2em;
-  border-top: 1px solid #e0d8cc;
   font-size: 0.92em;
 }
 
-/* ========== 诗歌排版 ========== */
+/* ========== 诗歌排版：只靠底色区分 ========== */
 /* 用法：<div class="poem">诗句<br>诗句<br>诗句</div> */
 .poem {
   margin: 2em auto;
   padding: 1.2em 1.5em;
   max-width: 26em;
   text-align: center;
-  font-style: normal;
   line-height: 2.1;
-  color: #3a3228;
+  color: #3a3a3a;
   letter-spacing: 0.05em;
-  background: #f2ede4;
-  border-top: 1px solid #ddd3c4;
-  border-bottom: 1px solid #ddd3c4;
+  background: #f2ece0;
+  border-radius: 2px;
 }
 .poem .poem-title {
   display: block;
   font-weight: 700;
   font-size: 0.95em;
   margin-bottom: 0.8em;
-  color: #6b5d4d;
+  color: #7B1E3A;
   letter-spacing: 0.1em;
 }
 .poem .poem-author {
   display: block;
   font-size: 0.85em;
-  color: #9a8a78;
+  color: #8a8a8a;
   margin-top: 0.8em;
 }
 
-/* ========== 引用排版 ========== */
+/* ========== 引用排版：只靠底色区分 ========== */
 /* 用法：<blockquote class="quote">引文</blockquote> */
 .quote {
   margin: 2em 0;
-  padding: 0.8em 0 0.8em 1.3em;
-  border-left: 3px solid #b09a7a;
+  padding: 1em 1.3em;
   font-size: 0.95em;
   line-height: 1.9;
-  color: #5a4d3d;
-  background: transparent;
+  color: #5a5a5a;
+  background: #f2ece0;
+  border-radius: 2px;
 }
 .quote p {
   margin: 0 0 0.6em;
@@ -230,32 +224,20 @@ footer {
   margin-top: 0.6em;
   font-style: normal;
   font-size: 0.85em;
-  color: #9a8a78;
+  color: #8a8a8a;
   text-align: right;
 }
-.quote cite::before {
-  content: "—— ";
-}
 
-/* ========== 文末作话 ========== */
+/* ========== 文末作话：只靠底色区分 ========== */
 /* 用法：<aside class="author-note">作话内容</aside> */
 .author-note {
   margin-top: 3em;
   padding: 1.2em 1.4em;
-  background: #f0ebe1;
+  background: #f2ece0;
   border-radius: 3px;
   font-size: 0.88em;
   line-height: 1.85;
-  color: #6b5d4d;
-}
-.author-note::before {
-  content: "作者的话";
-  display: block;
-  font-weight: 700;
-  font-size: 0.9em;
-  color: #8a7a68;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.6em;
+  color: #6a6a6a;
 }
 .author-note p {
   margin: 0 0 0.6em;
