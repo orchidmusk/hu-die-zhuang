@@ -13,8 +13,8 @@ body {
   padding: 0 20px;
   font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
   line-height: 1.9;
-  color: #2C366C;
-  background-color: #FFFBEA;
+  color: #2f2f2f;
+  background-color: #faf8f4;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
@@ -24,22 +24,22 @@ body {
 
 /* ===== 链接 ===== */
 a {
-  color: #2C366C;
+  color: #7a4a2b;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, opacity 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 a:hover {
-  opacity: 0.75;
-  border-bottom-color: #2C366C;
+  color: #5a3218;
+  border-bottom-color: #c9b8a3;
 }
 
 /* ===== 标题 ===== */
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.4;
-  color: #2C366C;
+  color: #1f1f1f;
   letter-spacing: 0.02em;
 }
 
@@ -52,7 +52,7 @@ h2 {
   font-size: 1.3em;
   margin: 2.2em 0 0.8em;
   padding-bottom: 0.4em;
-  border-bottom: 1px solid rgba(44, 54, 108, 0.2);
+  border-bottom: 1px solid #e5ddd0;
 }
 
 h3 {
@@ -71,7 +71,7 @@ header h1 {
 
 header p {
   margin: 0;
-  color: rgba(44, 54, 108, 0.65);
+  color: #8a7d6b;
   font-size: 0.95em;
 }
 
@@ -84,7 +84,7 @@ header p {
 
 .book-list li {
   padding: 1.4em 0;
-  border-bottom: 1px solid rgba(44, 54, 108, 0.15);
+  border-bottom: 1px solid #ece5d8;
 }
 
 .book-list li:last-child {
@@ -97,13 +97,17 @@ header p {
 }
 
 .book-list h3 a {
-  color: #2C366C;
+  color: #1f1f1f;
   border-bottom: none;
+}
+
+.book-list h3 a:hover {
+  color: #7a4a2b;
 }
 
 .book-list p {
   margin: 0;
-  color: rgba(44, 54, 108, 0.7);
+  color: #6b6257;
   font-size: 0.95em;
 }
 
@@ -116,11 +120,11 @@ header p {
 }
 
 .book-summary {
-  background: rgba(44, 54, 108, 0.06);
+  background: #f4efe6;
   padding: 1.2em 1.4em;
-  border-left: 3px solid #2C366C;
+  border-left: 3px solid #b99b76;
   margin: 0 0 2.5em;
-  color: rgba(44, 54, 108, 0.85);
+  color: #5a5248;
   font-size: 0.95em;
   line-height: 1.85;
 }
@@ -151,7 +155,7 @@ header p {
 .chapter-list li {
   counter-increment: chapter;
   padding: 0.7em 0;
-  border-bottom: 1px dashed rgba(44, 54, 108, 0.18);
+  border-bottom: 1px dashed #e8e0d2;
 }
 
 .chapter-list li:last-child {
@@ -163,15 +167,19 @@ header p {
   align-items: baseline;
   gap: 0.6em;
   border-bottom: none;
-  color: #2C366C;
+  color: #2f2f2f;
 }
 
 .chapter-list li a::before {
   content: counter(chapter, decimal-leading-zero);
   font-size: 0.8em;
-  color: rgba(44, 54, 108, 0.45);
+  color: #b0a390;
   font-family: Georgia, serif;
   flex-shrink: 0;
+}
+
+.chapter-list li a:hover {
+  color: #7a4a2b;
 }
 
 /* ===== 章节正文 ===== */
@@ -186,7 +194,6 @@ header p {
   margin: 0 0 1.5em;
   text-indent: 0;
   line-height: 2;
-  color: #2C366C;
 }
 
 .chapter-nav {
@@ -195,20 +202,24 @@ header p {
   align-items: center;
   margin-top: 3em;
   padding-top: 1.5em;
-  border-top: 1px solid rgba(44, 54, 108, 0.2);
+  border-top: 1px solid #e5ddd0;
   font-size: 0.9em;
 }
 
 .chapter-nav a {
   border-bottom: none;
-  color: #2C366C;
+  color: #7a4a2b;
+}
+
+.chapter-nav a:hover {
+  color: #5a3218;
 }
 
 /* ===== 联系表单 ===== */
 .contact {
   margin-top: 3em;
   padding-top: 1.5em;
-  border-top: 1px solid rgba(44, 54, 108, 0.2);
+  border-top: 1px solid #e5ddd0;
 }
 
 .contact h2 {
@@ -221,10 +232,10 @@ header p {
   font-family: inherit;
   font-size: 0.95em;
   padding: 0.7em;
-  border: 1px solid rgba(44, 54, 108, 0.3);
+  border: 1px solid #d8cfc0;
   border-radius: 3px;
-  background: #FFFBEA;
-  color: #2C366C;
+  background: #fffdf9;
+  color: #2f2f2f;
   width: 100%;
   margin-top: 0.6em;
 }
@@ -232,7 +243,7 @@ header p {
 .contact textarea:focus,
 .contact input[type="email"]:focus {
   outline: none;
-  border-color: #2C366C;
+  border-color: #b99b76;
 }
 
 .contact button {
@@ -240,25 +251,25 @@ header p {
   font-size: 0.95em;
   margin-top: 0.8em;
   padding: 0.6em 1.6em;
-  background: #2C366C;
-  color: #FFFBEA;
+  background: #7a4a2b;
+  color: #faf8f4;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .contact button:hover {
-  opacity: 0.85;
+  background: #5a3218;
 }
 
 /* ===== 页脚 ===== */
 footer {
   margin-top: 4em;
   padding-top: 1.5em;
-  border-top: 1px solid rgba(44, 54, 108, 0.15);
+  border-top: 1px solid #ece5d8;
   font-size: 0.82em;
-  color: rgba(44, 54, 108, 0.55);
+  color: #a89c8a;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -297,5 +308,89 @@ footer {
 
   .chapter-nav {
     font-size: 0.85em;
+  }
+}
+
+/* ===== 深色模式（跟随系统） ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1a17;
+    color: #d8d2c8;
+  }
+
+  h1, h2, h3 {
+    color: #f0ebe2;
+  }
+
+  a {
+    color: #c9a37a;
+  }
+
+  a:hover {
+    color: #e0be94;
+    border-bottom-color: #5a4a38;
+  }
+
+  h2 {
+    border-bottom-color: #3a352e;
+  }
+
+  .book-list li {
+    border-bottom-color: #2e2a25;
+  }
+
+  .book-list h3 a {
+    color: #f0ebe2;
+  }
+
+  .book-list p {
+    color: #a89c8a;
+  }
+
+  .book-summary {
+    background: #26221d;
+    border-left-color: #8a6f4e;
+    color: #b8b0a2;
+  }
+
+  .chapter-list li {
+    border-bottom-color: #2e2a25;
+  }
+
+  .chapter-list li a {
+    color: #d8d2c8;
+  }
+
+  .chapter-list li a::before {
+    color: #6b6257;
+  }
+
+  .chapter-nav {
+    border-top-color: #3a352e;
+  }
+
+  .contact {
+    border-top-color: #3a352e;
+  }
+
+  .contact textarea,
+  .contact input[type="email"] {
+    background: #26221d;
+    border-color: #3a352e;
+    color: #d8d2c8;
+  }
+
+  .contact button {
+    background: #8a6f4e;
+    color: #1c1a17;
+  }
+
+  .contact button:hover {
+    background: #a8895f;
+  }
+
+  footer {
+    border-top-color: #2e2a25;
+    color: #6b6257;
   }
 }
