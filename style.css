@@ -37,7 +37,7 @@ a:hover {
 h1, h2, h3 {
   font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 1.4;
+  ne-height: 1.4;
 }
 
 h1 {
@@ -75,17 +75,10 @@ footer {
   padding-top: 1.5em;
   font-size: 0.85em;
   color: #9a9a9a;
-  text-align: center;
+  text-agn: center;
 }
 
 
-/* 小说列表项之间的细线 */
-.book-list li {
-  border-bottom: 1px solid rgba(123, 30, 58, 0.12);
-}
-.book-list li:last-child {
-  border-bottom: none;
-}
 
 
 /* ========== 主页：小说列表 ========== */
@@ -256,6 +249,20 @@ footer {
   margin-bottom: 0;
 }
 
+/* ========== 主页分隔线 ========== */
+.home-header {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
+}
+
+.home-section {
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
+}
+.home-section:last-of-type {
+  border-bottom: none;
+}
 
 /* ========== 手机端适配 ========== */
 @media (max-width: 600px) {
