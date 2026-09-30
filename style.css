@@ -9,7 +9,6 @@
 body {
   font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
   font-size: 17px;
-  font-weight: 100;
   line-height: 1.9;
   color: #3a3a3a;
   background: #faf7f0;
@@ -294,5 +293,12 @@ footer {
   .poem {
     padding: 1em 1.2em;
     letter-spacing: 0.03em;
+  }
+}
+
+/* ========== 电脑端字变粗 ========== */
+@media (min-width: 601px) {
+  .chapter p {
+    font-weight: 100;
   }
 }
