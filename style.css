@@ -78,21 +78,6 @@ footer {
   text-align: center;
 }
 
-/* ========== 主页分区与分隔线 ========== */
-.home-section {
-  margin: 2.8em 0;
-  padding-top: 2em;
-  border-top: 1px solid rgba(123, 30, 58, 0.18);
-}
-.home-section:first-of-type {
-  border-top: none;
-  padding-top: 0;
-  margin-top: 0;
-}
-.home-section h2 {
-  text-align: center;
-  margin-bottom: 1.2em;
-}
 
 /* 小说列表项之间的细线 */
 .book-list li {
@@ -269,6 +254,21 @@ footer {
 }
 .author-note p:last-child {
   margin-bottom: 0;
+}
+
+/* ========== 主页分隔线 ========== */
+.home-header {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
+}
+
+.home-section {
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
+}
+.home-section:last-of-type {
+  border-bottom: none;
 }
 
 /* ========== 手机端适配 ========== */
