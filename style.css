@@ -249,20 +249,6 @@ footer {
   margin-bottom: 0;
 }
 
-/* ========== 主页分隔线 ========== */
-.home-header {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
-}
-
-.home-section {
-  padding-top: 1.8em;
-  padding-bottom: 1.8em;
-  border-bottom: 1px solid rgba(123, 30, 58, 0.15);
-}
-.home-section:last-of-type {
-  border-bottom: none;
-}
 
 /* ========== 手机端适配 ========== */
 @media (max-width: 600px) {
