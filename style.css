@@ -186,6 +186,7 @@ footer {
   text-align: center;
   line-height: 2.1;
   color: #3a3a3a;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   letter-spacing: 0.05em;
   background: #f2ece0;
   border-radius: 2px;
@@ -194,6 +195,7 @@ footer {
   display: block;
   font-weight: 700;
   font-size: 0.95em;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   margin-bottom: 0.8em;
   color: #7B1E3A;
   letter-spacing: 0.1em;
@@ -201,6 +203,7 @@ footer {
 .poem .poem-author {
   display: block;
   font-size: 0.85em;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   color: #8a8a8a;
   margin-top: 0.8em;
 }
@@ -211,6 +214,7 @@ footer {
   margin: 2em 0;
   padding: 1em 1.3em;
   font-size: 0.95em;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   line-height: 1.9;
   color: #5a5a5a;
   background: #f2ece0;
@@ -227,6 +231,7 @@ footer {
   margin-top: 0.6em;
   font-style: normal;
   font-size: 0.85em;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   color: #8a8a8a;
   text-align: right;
 }
@@ -238,7 +243,8 @@ footer {
   padding: 1.2em 1.4em;
   background: #f2ece0;
   border-radius: 3px;
-  font-size: 0.88em;
+  font-size: 0.8em;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
   line-height: 1.85;
   color: #6a6a6a;
 }
@@ -247,6 +253,20 @@ footer {
 }
 .author-note p:last-child {
   margin-bottom: 0;
+}
+
+
+/* 楷体字 */
+/* 整段调用：<p class="kai">这段话会用楷体显示。</p> */
+/* 句中调用：<p>正常文字，<span class="kai">这几个字用楷体</span>，然后恢复正常。</p> */
+.kai {
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
+}
+
+/* 暗红色楷体字 */
+.kai-red {
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", serif;
+  color: #7B1E3A;
 }
 
 
