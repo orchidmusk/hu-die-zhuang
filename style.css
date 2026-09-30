@@ -299,6 +299,6 @@ footer {
 /* ========== 电脑端字变粗 ========== */
 @media (min-width: 601px) {
   .chapter p {
-    font-weight: 300;
+    font-weight: 700;
   }
 }
